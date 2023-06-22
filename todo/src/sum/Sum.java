@@ -10,12 +10,12 @@ public class Sum {
         String str = "";
 
         System.out.println("合計を求めます");
+        Scanner scanner = new Scanner(System.in);
 
         do {
 
             System.out.println("数値を入力してください。合計を表示するには「end」と入力してください。");
 
-            Scanner scanner = new Scanner(System.in);
             str = scanner.nextLine();
             //System.out.println(str);
 
@@ -30,6 +30,8 @@ public class Sum {
         }while(!str.equals("end"));
 
         System.out.println("合計："+sum);
+
+        scanner.close();
     }
 
 }
