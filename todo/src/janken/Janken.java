@@ -46,6 +46,5 @@ public class Janken {
         }
 
         System.out.println("結果は"+result+"です");
-
     }
 }
